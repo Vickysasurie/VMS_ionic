@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+  	<ion-buttons start>
+  	<button ion-button menuToggle>
+  		<ion-icon name="menu"></ion-icon>
+  	</button>
+  </ion-buttons>
+    <ion-title>General</ion-title>
+  </ion-navbar>
+
+  <style>
+    #time{
+      font-size: 12px;
+      color: maroon;
+    }
+  </style>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingText="Pull to refresh">
+
+    </ion-refresher-content>
+  </ion-refresher>
+<ion-list>
+	<button clear ion-item *ngFor="let ld of listData" (click)="itemClicked(ld)">
+		{{ld.unique_id}}&nbsp;{{ ld.cname }}
+    <br>
+    <span id="time">{{ld.created | amTimeAgo }}</span>
+	</button>
+</ion-list>
+
+
+</ion-content>

@@ -1,0 +1,39 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ itemInfo.cname }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<h3>{{ itemInfo.cname }}</h3>
+  <p>Mobile Number : {{ itemInfo.mobile_number }}</p>
+  <p>Short Message : {{ itemInfo.message_type }}</p>
+  <p>Information   : {{ itemInfo.information }}</p>
+	<p>{{ itemInfo.created | amTimeAgo }}</p>
+
+
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Comments</ion-label>
+      <ion-select [(ngModel)]="user_data.desc">
+        <ion-option value="Send to my cabin">Send to my cabin</ion-option>
+        <ion-option value="Come to my cabin immediately">Come to my cabin immediately</ion-option>
+        <ion-option value="Wait for 15mints">Wait for 15mints</ion-option>
+        <ion-option value="Postpone meeting -Tommorow">Postpone meeting -Tommorow</ion-option>
+        <ion-option value="Postpone meeting - 2 to 3 Days">Postpone meeting - 2 to 3 Days</ion-option>
+        <ion-option value="Reject the Appointment">Reject the Appointment</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button color="secondary" outline (click)="acceptAppointment()">Accept</button>
+  <button ion-button outline (click)="postponeAppointment()">Postpond</button>
+  <button ion-button color="danger" outline (click)="rejectAppointment()">Reject</button>
+
+</ion-content>

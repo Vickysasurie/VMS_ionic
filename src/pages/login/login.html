@@ -1,0 +1,44 @@
+<style>
+  ion-content{
+    background-color: #fff;
+  }
+  .btn{
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+</style>
+
+<ion-content padding>
+  <br>
+  <br>
+  <div>
+    <img src="assets/imgs/VMS.png" style="display: block;margin: auto;">
+  </div>
+
+    <!--<form [formGroup]="loginForm"> -->
+      <ion-item>
+        <ion-label floating><ion-icon ios="ios-contact" md="md-contact"></ion-icon>  Username</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="userLogData.username"></ion-input>
+      </ion-item>
+
+     <!-- <ion-item *ngIf="username.hasError('required') && username.touched" >
+        <p> * Username required and must be minimum 5 digits</p>
+      </ion-item> formControlName="username"-->
+
+      <ion-item>
+        <ion-label floating ><ion-icon ios="ios-lock" md="md-lock"></ion-icon>  Password</ion-label>
+        <ion-input type="password" [(ngModel)]="userLogData.password"></ion-input>
+      </ion-item>
+
+     <!-- <ion-item *ngIf="pass.hasError('required') && pass.touched">
+        <p> * Password required  and must be within 20 digits </p>
+      </ion-item>  formControlName="pass" -->
+
+      <br>
+    <!--</form> -->
+
+  <button class="btn" ion-button (click) ="doLogin()" color="dark" outline round>Login</button>
+<br>
+  <a class="btn" (click)="signup()">Don't have an account?</a>
+</ion-content>

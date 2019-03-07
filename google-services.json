@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "502204118593",
+    "firebase_url": "https://vms1-0.firebaseio.com",
+    "project_id": "vms1-0",
+    "storage_bucket": "vms1-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502204118593:android:6473892be1aefd3c",
+        "android_client_info": {
+          "package_name": "com.shine.vms1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502204118593-8shv79anmvastjh3ivv5a5e8u6og8pig.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "502204118593-8shv79anmvastjh3ivv5a5e8u6og8pig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnDP73liExon8D31wK94bZ-1ayZNMfh3Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
